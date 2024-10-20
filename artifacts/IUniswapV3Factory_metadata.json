@@ -1,0 +1,298 @@
+{
+	"compiler": {
+		"version": "0.8.25+commit.b61c2a91"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					},
+					{
+						"indexed": true,
+						"internalType": "int24",
+						"name": "tickSpacing",
+						"type": "int24"
+					}
+				],
+				"name": "FeeAmountEnabled",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerChanged",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token0",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "token1",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					},
+					{
+						"indexed": false,
+						"internalType": "int24",
+						"name": "tickSpacing",
+						"type": "int24"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "pool",
+						"type": "address"
+					}
+				],
+				"name": "PoolCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					}
+				],
+				"name": "createPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pool",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					},
+					{
+						"internalType": "int24",
+						"name": "tickSpacing",
+						"type": "int24"
+					}
+				],
+				"name": "enableFeeAmount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					}
+				],
+				"name": "feeAmountTickSpacing",
+				"outputs": [
+					{
+						"internalType": "int24",
+						"name": "",
+						"type": "int24"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenA",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenB",
+						"type": "address"
+					},
+					{
+						"internalType": "uint24",
+						"name": "fee",
+						"type": "uint24"
+					}
+				],
+				"name": "getPool",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "pool",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"WaterCoin/ERC584.sol": "IUniswapV3Factory"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"WaterCoin/Context.sol": {
+			"keccak256": "0x28ad9de5e26095f685a085591178af7aeac1427af1bf442986b5aee0a5b2a14a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0ad3864801aabbcc6f52361a1b86a3d4d342e283cc2036c47a3ef2df7e4a3c51",
+				"dweb:/ipfs/QmezNWJGoPBwtHjsQae7dbqjeZgpbB2cHFE5nFBBzGvJFR"
+			]
+		},
+		"WaterCoin/ERC20.sol": {
+			"keccak256": "0x87a6cd77ac29ccb0ea4f98b113fba4cc8dc001e7511a473b0d2f142f8540c8ae",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7d2431bf10bea95e7ac28265cc9647740dbbf75aaae16bcd46e873c65a67b655",
+				"dweb:/ipfs/QmNygLZj2gBWmZqDDsp9ns17WEDFXeqnQBk2PhV7XW7YmM"
+			]
+		},
+		"WaterCoin/ERC20Burnable.sol": {
+			"keccak256": "0xf2edf47328bf1570daab4f74b8260e413082d94acf6f1a1aa8c3eb37fa13b245",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2601db1e6d7d47a242fe708353f3b3d57d69fbd8881bbab3ffe3ffa99e9c9e4f",
+				"dweb:/ipfs/QmPMXuVKyDL4RaDtesHVGZPE57S4UoLyPkNw9xnEL5JJk3"
+			]
+		},
+		"WaterCoin/ERC584.sol": {
+			"keccak256": "0x2c84a45a893f41fb5728ae82079261f8e4ed853317bbcc725fa9235a3436a650",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1f975de3f840f0d729ec7962dc08afc370c7b433dc2532bc990e71a2dcfcb1a7",
+				"dweb:/ipfs/QmPQmXzQLcyKFJzdGf1TX5JeNKzQTPrKdqft179t2wgCTU"
+			]
+		},
+		"WaterCoin/IERC20.sol": {
+			"keccak256": "0xef1a4316c83b708516f739706422747aee3f8f4f96780fe7cbf5adf006af2f26",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cdefd25ce0febf5f3af6fc9db162fa22fdae13c0c028c0e4063d631f62b10f11",
+				"dweb:/ipfs/QmdTBHjxr8BvvN6U9e3JEeYXe2fmkDs8AWbvdZc3k3HoCE"
+			]
+		},
+		"WaterCoin/IERC20Metadata.sol": {
+			"keccak256": "0x53709e071db42f2bab05e7ec67814e5fc6083e133724b7636ee2a42dec0f03c2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://54b32bbb16ffe1032bdadf31d96f82278c697edb3ad30b0952e71b640105b872",
+				"dweb:/ipfs/QmZiCggVgxRUMiFX28jbp7WEjpy6E9PaFYLu3mCs9o26Yg"
+			]
+		},
+		"WaterCoin/Ownable.sol": {
+			"keccak256": "0xa6428484d54bc2cd4eb2a5632305a4b7783365f8c5fa173ad62c4795bf2839f8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1a7d9efbfeef2f5c28979e8a93eeab25f6c2e85e69fe6261c4c17d15c5c3aadf",
+				"dweb:/ipfs/QmQieD54hKvNVXV3RuknW9BnSurgGrEyTnmcKHXg9YHC7E"
+			]
+		},
+		"WaterCoin/draft-IERC6093.sol": {
+			"keccak256": "0x68997d3147926564cee6f3558c252378207a792ffcd058047dacc3afa2a1e309",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://00cc413a013f20cecd3f4d5012b0fbad31cfcbbd1767a22d738bbc09093ed7a8",
+				"dweb:/ipfs/QmYKxXCfpES4sLCk4uGT9KZ1m5vL7pidw72RmoAFTQy7Xw"
+			]
+		}
+	},
+	"version": 1
+}
